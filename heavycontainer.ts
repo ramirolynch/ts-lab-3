@@ -17,5 +17,6 @@ export class HeavyContainer implements ShippingContainer {
 
 export let heavycntr = new HeavyContainer(1000, 'Australia', 3000)
 export let heavycntr2 = new HeavyContainer(1000, 'India', 14000)
+export let heavycntr3 = new HeavyContainer(2000, 'Brazil', 12000)
 
 console.log(heavycntr.getGrossWeight())

@@ -1,6 +1,6 @@
 import { Transporter } from './transporter'
 import { ShippingContainer} from './shippingcont'
-import {heavycntr, heavycntr2} from './heavycontainer'
+import {heavycntr, heavycntr2, heavycntr3} from './heavycontainer'
 
 
 export class Truck implements Transporter {
@@ -27,6 +27,14 @@ export class Truck implements Transporter {
     }
 
 }
+
+export let newTruck2 = new Truck(20000)
+newTruck2.addContainer(heavycntr2)
+
+export let newTruck3 = new Truck(14000)
+newTruck3.addContainer(heavycntr3)
+
+console.log(newTruck3.getTotalWeight())
 
 export let newTruck = new Truck(3000)
 
