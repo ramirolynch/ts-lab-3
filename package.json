@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/ramirolynch/ts-lab-3#readme",
   "devDependencies": {
-    "jest": "^27.4.7"
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "ts-jest": "^27.1.3"
   }
 }
