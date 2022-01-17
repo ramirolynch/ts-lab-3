@@ -33,6 +33,8 @@ export class Ship implements Transporter {
 export let newShip = new Ship(10000)
 export let newLightCont = new LightContainer('Peru', 1000)
 export let newHeavyCont = new HeavyContainer(2000, 'Chile')
+export let newHeavyCont2 = new HeavyContainer(6000, 'Paraguay')
+export let newHeavyCont3 = new HeavyContainer(6000, 'Bolivia')
 
 
 newShip.addContainer(newLightCont)
@@ -54,5 +56,10 @@ export let newShip2 = new Ship(12000)
 
 // console.log(newShip2)
 
+export let newShip3 = new Ship(5000)
+newShip3.addContainer(newHeavyCont2)
+
+export let newShip4 = new Ship(6000)
+newShip4.addContainer(newHeavyCont3)
 
 
