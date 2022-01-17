@@ -2,6 +2,7 @@ import { Transporter } from './transporter'
 import { ShippingContainer} from './shippingcont'
 import { LightContainer } from './lightcontainer'
 import { HeavyContainer } from './heavycontainer'
+import { cont } from './lightcontainer'
 
 export class Ship implements Transporter {
     maxWeight:number;
@@ -46,6 +47,12 @@ console.log(newShip.isOverweight())
 //newShip.addContainer(newHeavyCont)
 
 console.log(newShip.isOverweight())
+
+export let newShip2 = new Ship(12000)
+
+// export let contAdd = newShip2.addContainer(cont)
+
+// console.log(newShip2)
 
 
 
